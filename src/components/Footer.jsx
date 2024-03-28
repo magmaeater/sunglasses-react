@@ -1,7 +1,7 @@
 import React from "react";
-import logo from "../../../public/four_dot.png";
-import linkedin from "../../../public/linkedin.png";
-import reboot from "../../../public/reboot.png";
+import logo from "/four_dot.png";
+import linkedin from "/linkedin.png";
+import reboot from "/reboot.png";
 export default function Footer() {
   return (
     <footer className="w-full h-[850px] lg:h-[775px] bg-[#FFF8EC] text-[#502E23]">
@@ -66,7 +66,7 @@ export default function Footer() {
         </div>
       </div>
 
-      <div className="flex justify-center mt-36 lg:mt-0 -ml-14 lg:-ml-0">
+      <div className="flex justify-center mt-36 lg:mt-0 ">
         <img
           src={reboot}
           alt=""
