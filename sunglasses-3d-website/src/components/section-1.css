@@ -1,0 +1,125 @@
+
+
+.sec1 {
+    width: 100vw;
+    height: 100vh;
+    background-color: #FFF8EC;
+    
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.headings {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 3%;
+    gap: 50px; /* Add the desired space between items */
+    font-family: "Quattrocento Sans", sans-serif;
+    color: #502e23; /* Change the font color to #502e23 */
+    font-size: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+     .headings h1 { display: none; } 
+    } /* Hide the h1 element on screens smaller than 600px */
+
+
+.logo {
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.b,
+.b1 {
+  letter-spacing: -0.07em;
+}
+.b {
+  position: absolute;
+  top: 100px;
+  left: 102px;
+}
+.b1 {
+  top: 223px;
+  left: 316px;
+}
+.b1,
+.b2,
+.sg-1-icon {
+  position: absolute;
+}
+.b2 {
+  top: 100px;
+  left: 553px;
+  letter-spacing: -0.07em;
+}
+
+.header b
+{
+    font-size: 500px;
+    color: #facf6a;
+}
+
+@media only screen and (max-width: 600px) {
+    .header b {
+        position: absolute;
+        
+        
+        font-size: 150px;
+    }
+
+    .b{
+        position: absolute;
+        top: 217px;
+        left: 50px;
+    }
+    .b1
+    {
+        position: absolute;
+        left: 130px;
+        top: 240px;
+    }
+    .b2
+    {
+        position: absolute;
+        top: 217px;
+        left: 220px;
+    }
+
+    
+}
+
+.foot
+{
+  position: absolute;
+  top: 800px;
+  left: 76px;
+  font-size: 48px;
+  font-family: Lora;
+  color: #502e23;
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 600px) {
+    .foot {
+        position: absolute;
+        top: 600px;
+        left: 10px;
+        font-size: 48px;
+        font-family: Lora;
+        color: #502e23;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .sec1
+    {
+        height: 100vh;
+        width: 100vw;
+    }
+}
+
