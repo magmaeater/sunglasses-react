@@ -21,9 +21,9 @@ const Section1 = () => {
           <b className="b1">6</b>
           <b className="b2">0°</b>
         </div>
-        {/* <div className='foot'>
+        { <div className='foot'>
                     <div className='embrace'>Embrace Every Angle Of Style</div>
-                </div> */}
+                </div> }
       </div>
     </>
   );
