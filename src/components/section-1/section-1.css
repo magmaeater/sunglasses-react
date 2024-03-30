@@ -33,6 +33,7 @@
 .logo {
     margin-top: 10px;
     margin-left: 10px;
+    
 }
 
 .b,
@@ -127,4 +128,10 @@
 .bottom
 {
     display: flex;
+}
+
+.image
+{
+    width: 7%;
+    height: 7%;
 }

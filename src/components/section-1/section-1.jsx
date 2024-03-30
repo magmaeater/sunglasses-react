@@ -6,9 +6,9 @@ const Section1 = () => {
     <>
       <div className="sec1">
         <div className="header">
-          <div>
+          
             <img src={"/sunglasses-logo.png"} className="logo" />
-          </div>
+          
           <div className="headings">
             <h1>Trends</h1>
             <h1>Shop by Gender</h1>

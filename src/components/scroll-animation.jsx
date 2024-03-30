@@ -1,13 +1,13 @@
 import gsap from "gsap";
 
-export const ScrollAnimation = (position, target, onUpdate) => {
+export const ScrollAnimation = (position, target, isMobile ,onUpdate) => {
 
     const tl = gsap.timeline();
 
     tl.to(position, {
-        x: -0.0487340632,
-        y: 0.9870711613,
-        z: 10.0163167061 ,
+        x: !isMobile ? -0.0487340632 : -0.3816079378,
+        y: !isMobile ? 0.9870711613 : 3.4758860394,
+        z: !isMobile ? 10.0163167061 : 16.0723094356 ,
         scrollTrigger: {
             trigger: ".sec2",
             start: "top bottom",
@@ -20,9 +20,9 @@ export const ScrollAnimation = (position, target, onUpdate) => {
             
     })
     .to(target, {
-        x: -0.0437556857,
-        y: -0.2135263777,
-        z: 0.0886512821 ,
+        x: !isMobile ? -0.0437556857 : -0.0549624841,
+        y: !isMobile ? -0.2135263777 : -0.5965267408,
+        z: !isMobile ? 0.0886512821 : -0.3217279325,
         scrollTrigger: {
             trigger: ".sec2",
             start: "top bottom",

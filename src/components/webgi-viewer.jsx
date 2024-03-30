@@ -26,15 +26,17 @@ import { ScrollAnimation } from "./scroll-animation";
 gsap.registerPlugin(ScrollTrigger);
 
 
+
 function WebgiViewer() {
 
     const canvasRef = useRef(null);
+    const [isMobile, setIsMobile] = useState(null);
 
     const memoizedScrollAnimation = useCallback(
-        (position, target, onUpdate) => {
+        (position, target, isMobile ,onUpdate) => {
 
             if(position && target && onUpdate) {
-                ScrollAnimation(position, target, onUpdate);
+                ScrollAnimation(position, target,isMobile ,onUpdate);
             }
         }
 
@@ -56,7 +58,8 @@ function WebgiViewer() {
 
                 await addBasePlugins(viewer)
 
-
+                const isMobileTablet = mobileAndTabletCheck();
+                setIsMobile(isMobileTablet);
 
                 await viewer.addPlugin(AssetManagerBasicPopupPlugin)
 
@@ -81,6 +84,11 @@ function WebgiViewer() {
 
                 viewer.scene.activeCamera.setCameraOptions({controlsEnabled:false});
 
+                if(isMobileTablet) {
+                    position.set(7.8787211412, 5.4914637434, 7.6678386324);
+                    target.set(-1.0041416816, -0.552869101, -0.2359403859);
+                }
+
                 window.scrollTo(0, 0);
                 let needsUpdate = true;
                 const onUpdate = () => {
@@ -95,7 +103,7 @@ function WebgiViewer() {
                     }
                 });
 
-                memoizedScrollAnimation(position, target, onUpdate);
+                memoizedScrollAnimation(position, target, isMobileTablet ,onUpdate);
                     
     }, []);
 
