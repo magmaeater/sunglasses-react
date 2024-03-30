@@ -58,17 +58,12 @@ const Section3 = () => {
             ref={h1Ref}
             className="w-[310px] lg:w-[448px] h-[270px] lg:h-[470px] px-6 lg:px-0 lg:ml-28 flex items-center"
           >
-            <h1 className="font-qsans font-bold lg:font-normal text-xl lg:text-[32px] leading-[30px] lg:leading-[47px] text-center lg:text-left">
-              <span className="text-[#FAB000]">
-                At Shades 360, we start with premium, sustainable materials for
-                durability.
-              </span>{" "}
-              <span className="text-[#502E23]">
-                Our lenses undergo rigorous UV protection testing. Skilled
-                artisans meticulously craft each frame to perfection. From
-                concept to creation, our sunglasses embody quality craftsmanship
-                and timeless style.
-              </span>
+            <h1 className="text-black font-qsans font-bold lg:font-normal text-xl lg:text-[32px] leading-[30px] lg:leading-[47px] text-center lg:text-left">
+              At Shades 360, we start with premium, sustainable materials for
+              durability. Our lenses undergo rigorous UV protection testing.
+              Skilled artisans meticulously craft each frame to perfection. From
+              concept to creation, our sunglasses embody quality craftsmanship
+              and timeless style.
             </h1>
           </div>
         </div>
