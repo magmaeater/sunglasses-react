@@ -40,11 +40,11 @@
 }
 .b {
   position: absolute;
-  top: 100px;
+  top: 0px;
   left: 102px;
 }
 .b1 {
-  top: 223px;
+  top: 103px;
   left: 316px;
 }
 .b1,
@@ -53,7 +53,7 @@
   position: absolute;
 }
 .b2 {
-  top: 100px;
+  top: 0px;
   left: 553px;
   letter-spacing: -0.07em;
 }
@@ -96,7 +96,7 @@
 .foot
 {
   position: absolute;
-  top: 800px;
+  top: 700px;
   left: 76px;
   font-size: 48px;
   font-family: Lora;
@@ -123,3 +123,7 @@
     }
 }
 
+.bottom
+{
+    display: flex;
+}
