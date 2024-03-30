@@ -5,6 +5,7 @@ import logo from "/four_dot.png";
 const Section4 = () => {
   return (
     <>
+    <div className="section4">
       <div className="bg-[#FFF8EC] flex flex-col justify-center items-center">
         <div className="w-full h-[800px] flex justify-center items-center relative">
           <div className="flex flex-col space-y-7 lg:space-y-80 lg:-mb-20">
@@ -21,6 +22,7 @@ const Section4 = () => {
             className="absolute top-0 right-0 m-4 mr-10 w-8 lg:w-14 h-8 lg:h-14"
           />
         </div>
+      </div>
       </div>
     </>
   );

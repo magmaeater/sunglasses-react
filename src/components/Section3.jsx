@@ -2,6 +2,7 @@ import React from "react";
 
 const Section3 = () => {
   return (
+    <div className="section3">
     <div className="w-full h-screen bg-[#FFF8EC]">
       <div className="flex justify-end mr-10">
         <img src={"/four_dot.png"} alt="" />
@@ -27,6 +28,7 @@ const Section3 = () => {
           </h1>
         </div>
       </div>
+    </div>
     </div>
   );
 };
