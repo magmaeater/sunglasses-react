@@ -17,7 +17,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-right: 3%;
+    margin-right: 0%;
+    margin-left: 900px;
     gap: 50px; /* Add the desired space between items */
     font-family: "Quattrocento Sans", sans-serif;
     color: #502e23; /* Change the font color to #502e23 */
