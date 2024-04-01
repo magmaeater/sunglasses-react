@@ -33,9 +33,9 @@ export const ScrollAnimation = (position, target, isMobile ,onUpdate) => {
         },         
     })
     .to(position, {
-        x: -2.8308075585,
-        y: 0.6858450038,
-        z: -5.181981393 ,
+        x: !isMobile ? -2.8308075585: -7.7580645595,
+        y: !isMobile ? 0.6858450038: 5.7245728654,
+        z: !isMobile ? -5.181981393: -14.4700282245,
         scrollTrigger: {
             trigger: ".section3",
             start: "top bottom",
@@ -48,9 +48,9 @@ export const ScrollAnimation = (position, target, isMobile ,onUpdate) => {
             
     })
     .to(target, {
-        x: 0.5210938242,
-        y: -0.1252964741,
-        z: -0.3196448389 ,
+        x: !isMobile ? 0.5210938242: 0.2589888696,
+        y: !isMobile ? -0.1252964741: -0.446989382,
+        z: !isMobile ? -0.3196448389:  0.5235755229,
         scrollTrigger: {
             trigger: ".section3",
             start: "top bottom",
